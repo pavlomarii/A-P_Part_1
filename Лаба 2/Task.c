@@ -14,17 +14,17 @@ int main()
 		fact = factorial(r);
 		numerator = pow(n,3);
 		e = numerator/fact;
-		if (e > 0.0001)
+		if (e < 0.0001)
 		{
 			break;
 		}
-		printf("%.4f\n", e);
+		printf("n[%i] = %.4f\n",(int)n, e);
 		suma = suma + e;
-		n++
+		n++;
 	}
 	while (e > 0.0001);
 	printf("Suma = %.4f\n", suma);
-	return 0 
+	return 0;
 }
 
 long factorial(int n)
