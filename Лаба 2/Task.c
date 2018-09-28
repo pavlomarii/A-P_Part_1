@@ -14,6 +14,10 @@ int main()
 		fact = factorial(r);
 		numerator = pow(n,3);
 		e = numerator/fact;
+		if (e > 0.0001)
+		{
+			break;
+		}
 		printf("%.4f\n", e);
 		suma = suma + e;
 		n++
